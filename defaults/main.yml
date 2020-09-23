@@ -1,6 +1,6 @@
 ---
-php-fpm: "php7.3-fpm"
-php-fpm_state: "present"
+php_fpm: "php7.3-fpm"
+php_fpm_state: "present"
 apt_update_cache: "yes"
 php_modules:
     - php7.3-mbstring
