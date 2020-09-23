@@ -7,4 +7,4 @@
 - name: install php modules
   apt:
     pkg: "{{ item }}"
-  with_items: {{ php_modules }}
+  with_items: "{{ php_modules }}"
