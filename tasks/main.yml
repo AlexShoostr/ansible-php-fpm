@@ -1,0 +1,10 @@
+- name: install php-fpm 
+  apt: 
+    pkg: "{{ php-fpm }}"
+    state: "{{ php-fpm_state }}"
+    update_cache: "{{ apt_update_cache }}"
+
+- name: install php modules
+  apt:
+    pkg: "{{ item }}"
+  with_items: {{ php_modules }}
